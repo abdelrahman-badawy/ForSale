@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="4Sale">
+	<listeners>
+		<listener class-name="com.ForSale.listeners.ForSaleTestListener"></listener>
+	</listeners>
+  <test thread-count="5" name="Android">
+	  <parameter name="deviceName" value="Redmi 9"></parameter>
+	  <parameter name="platformName" value="Android"></parameter>
+	  <classes>
+		  <class name="com.ForSale.base.Base"></class>
+		  <class name="com.ForSale.testcases.HomeScreenTest"></class>
+		   <class name="com.ForSale.testcases.PostanadScreenTest"></class>
+		  <class name="com.ForSale.testcases.AddMediaScreenTest"></class>
+	  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
